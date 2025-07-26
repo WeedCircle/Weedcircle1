@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeedCircle - Your Cannabis Companion</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #2d5a3d 0%, #4a7c59 100%);
+            border-radius: 24px;
+            margin: 0 auto 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: white;
+        }
+        h1 {
+            color: #2d5a3d;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .tagline {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #2d5a3d 0%, #4a7c59 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(45, 90, 61, 0.3);
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 90, 61, 0.4);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #2d5a3d;
+        }
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2d5a3d;
+            margin-bottom: 15px;
+        }
+        .feature-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        .about-section {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .about-section h2 {
+            color: #2d5a3d;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .about-section p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        .footer {
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-top: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .footer-link {
+            color: #2d5a3d;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .footer-link:hover {
+            color: #4a7c59;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+        }
+        .privacy-notice {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 4px solid #2d5a3d;
+        }
+        .privacy-notice h3 {
+            color: #2d5a3d;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .tagline {
+                font-size: 1.1rem;
+            }
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🌿</div>
+            <h1>WeedCircle</h1>
+            <p class="tagline">Your responsible cannabis companion</p>
+            <a href="#" class="download-btn">Download on App Store</a>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">📖</div>
+                <div class="feature-title">Strain Journal</div>
+                <div class="feature-description">
+                    Build your personal cannabis library with detailed strain tracking. Log effects, flavors, THC/CBD content, and your personal ratings.
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <div class="feature-title">Session Planner</div>
+                <div class="feature-description">
+                    Plan perfect sessions with friends using our intuitive planner. Set reminders, choose locations, and coordinate with your circle.
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🗺️</div>
+                <div class="feature-title">Legal Map</div>
+                <div class="feature-description">
+                    Find licensed dispensaries in your area with ratings, contact information, hours, and directions to stay compliant.
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🛡️</div>
+                <div class="feature-title">Safe Dosage</div>
+                <div class="feature-description">
+                    Stay safe with our intelligent dosage calculator. Get personalized recommendations based on your weight, tolerance, and strain potency.
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <div class="feature-title">Private Community</div>
+                <div class="feature-description">
+                    Connect with like-minded enthusiasts in our secure, private community. Share experiences and tips while maintaining your privacy.
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <div class="feature-title">Accessory Checklist</div>
+                <div class="feature-description">
+                    Never forget essential items with our comprehensive session preparation tools. Customize checklists for different session types.
+                </div>
+            </div>
+        </div>
+
+        <div class="privacy-notice">
+            <h3>🔒 Privacy First</h3>
+            <p>WeedCircle is designed with privacy-first principles. All your data stays on your device and is never transmitted to our servers. Your cannabis journey remains completely private.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>About WeedCircle</h2>
+            <p>
+                WeedCircle is a modern, responsible iOS app designed for cannabis enthusiasts who want to plan, learn, and connect while staying safe and informed. Our mission is to provide a comprehensive companion that promotes responsible cannabis use through education, community, and thoughtful design.
+            </p>
+            <p>
+                Whether you're a seasoned enthusiast or new to cannabis, WeedCircle helps you track your experiences, plan safe sessions, find legal dispensaries, and connect with a supportive community. We believe in the power of responsible cannabis use and are committed to providing tools that enhance your journey while prioritizing safety and privacy.
+            </p>
+        </div>
+
+        <div class="footer">
+            <div class="footer-links">
+                <a href="support.html" class="footer-link">Support</a>
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                <a href="terms.html" class="footer-link">Terms of Service</a>
+            </div>
+            <div class="contact-info">
+                <p><strong>Contact:</strong> support@weedcircle.app</p>
+                <p><strong>Legal:</strong> legal@weedcircle.app</p>
+                <p><strong>Privacy:</strong> privacy@weedcircle.app</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
